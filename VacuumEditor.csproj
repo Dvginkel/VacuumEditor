@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7835E93C-E95E-4E73-8231-E87E7D3A6F56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VacuumEditor</RootNamespace>
+    <AssemblyName>VacuumEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.7.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\VacuumWarrior\AcademyHire.cs" />
+    <Compile Include="Classes\VacuumWarrior\Achievements.cs" />
+    <Compile Include="Classes\VacuumWarrior\ActiveBoosts.cs" />
+    <Compile Include="Classes\VacuumWarrior\AdvancedBackpack.cs" />
+    <Compile Include="Classes\VacuumWarrior\AdvancedPushableSweeper.cs" />
+    <Compile Include="Classes\VacuumWarrior\AdvancedStick.cs" />
+    <Compile Include="Classes\VacuumWarrior\AdvancedUpright.cs" />
+    <Compile Include="Classes\VacuumWarrior\Angle.cs" />
+    <Compile Include="Classes\VacuumWarrior\AsteroidDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\AutoBuyerSpeed.cs" />
+    <Compile Include="Classes\VacuumWarrior\AVA.cs" />
+    <Compile Include="Classes\VacuumWarrior\AvaAutoBuyer.cs" />
+    <Compile Include="Classes\VacuumWarrior\AVACollectCommon.cs" />
+    <Compile Include="Classes\VacuumWarrior\AVACollectGolden.cs" />
+    <Compile Include="Classes\VacuumWarrior\AvaCollectJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\AvaReinforcements.cs" />
+    <Compile Include="Classes\VacuumWarrior\AVAShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\AvaSpeedBoost.cs" />
+    <Compile Include="Classes\VacuumWarrior\BasicBackpack.cs" />
+    <Compile Include="Classes\VacuumWarrior\BasicPushableSweeper.cs" />
+    <Compile Include="Classes\VacuumWarrior\BasicStick.cs" />
+    <Compile Include="Classes\VacuumWarrior\BasicUpright.cs" />
+    <Compile Include="Classes\VacuumWarrior\BeginnerVacuum.cs" />
+    <Compile Include="Classes\VacuumWarrior\Boosts.cs" />
+    <Compile Include="Classes\VacuumWarrior\BoostShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\BoostStatistics.cs" />
+    <Compile Include="Classes\VacuumWarrior\BoostTimers.cs" />
+    <Compile Include="Classes\VacuumWarrior\BundleOfKeys.cs" />
+    <Compile Include="Classes\VacuumWarrior\BuyTokens.cs" />
+    <Compile Include="Classes\VacuumWarrior\Carpet.cs" />
+    <Compile Include="Classes\VacuumWarrior\ChestBuildup.cs" />
+    <Compile Include="Classes\VacuumWarrior\Chests.cs" />
+    <Compile Include="Classes\VacuumWarrior\ChestShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\ChestSpawnRateBoost.cs" />
+    <Compile Include="Classes\VacuumWarrior\ChestStorageCommon.cs" />
+    <Compile Include="Classes\VacuumWarrior\ChestStorageGolden.cs" />
+    <Compile Include="Classes\VacuumWarrior\ClaimedOtEnthusiastRewards.cs" />
+    <Compile Include="Classes\VacuumWarrior\ClaimedOtExpertRewards.cs" />
+    <Compile Include="Classes\VacuumWarrior\ClaimedTokenPacks.cs" />
+    <Compile Include="Classes\VacuumWarrior\ClickDiscord.cs" />
+    <Compile Include="Classes\VacuumWarrior\ClickReddit.cs" />
+    <Compile Include="Classes\VacuumWarrior\CoalDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\CollectedChests.cs" />
+    <Compile Include="Classes\VacuumWarrior\CollectJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\CommonDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\CompressedDustTokens.cs" />
+    <Compile Include="Classes\VacuumWarrior\ConfiguredHotkeys.cs" />
+    <Compile Include="Classes\VacuumWarrior\CosmicDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\Cpu.cs" />
+    <Compile Include="Classes\VacuumWarrior\CraftBoosts.cs" />
+    <Compile Include="Classes\VacuumWarrior\CrumpledPaper.cs" />
+    <Compile Include="Classes\VacuumWarrior\CrushedCan.cs" />
+    <Compile Include="Classes\VacuumWarrior\Currencies.cs" />
+    <Compile Include="Classes\VacuumWarrior\CurrencyData.cs" />
+    <Compile Include="Classes\VacuumWarrior\Dice.cs" />
+    <Compile Include="Classes\VacuumWarrior\Dirt.cs" />
+    <Compile Include="Classes\VacuumWarrior\DustBuildup.cs" />
+    <Compile Include="Classes\VacuumWarrior\DustShopDiscount.cs" />
+    <Compile Include="Classes\VacuumWarrior\DustStatistics.cs" />
+    <Compile Include="Classes\VacuumWarrior\DustTypes.cs" />
+    <Compile Include="Classes\VacuumWarrior\Dynamite.cs" />
+    <Compile Include="Classes\VacuumWarrior\ExceedChestStorageCapacity.cs" />
+    <Compile Include="Classes\VacuumWarrior\ExtraManagerSlot.cs" />
+    <Compile Include="Classes\VacuumWarrior\FirstPrestige.cs" />
+    <Compile Include="Classes\VacuumWarrior\FreeManagers.cs" />
+    <Compile Include="Classes\VacuumWarrior\GameTime.cs" />
+    <Compile Include="Classes\VacuumWarrior\GardenTrowel.cs" />
+    <Compile Include="Classes\VacuumWarrior\GlobalStatistics.cs" />
+    <Compile Include="Classes\VacuumWarrior\GoldenProbability.cs" />
+    <Compile Include="Classes\VacuumWarrior\GrassPollen.cs" />
+    <Compile Include="Classes\VacuumWarrior\Gum.cs" />
+    <Compile Include="Classes\VacuumWarrior\Have3BoostsActive.cs" />
+    <Compile Include="Classes\VacuumWarrior\Have5BoostsActive.cs" />
+    <Compile Include="Classes\VacuumWarrior\Home.cs" />
+    <Compile Include="Classes\VacuumWarrior\Hotkeys.cs" />
+    <Compile Include="Classes\VacuumWarrior\IGP.cs" />
+    <Compile Include="Classes\VacuumWarrior\IGPBenefits.cs" />
+    <Compile Include="Classes\VacuumWarrior\InfinityCapsule1.cs" />
+    <Compile Include="Classes\VacuumWarrior\InfinityCapsule2.cs" />
+    <Compile Include="Classes\VacuumWarrior\InfinityCapsule3.cs" />
+    <Compile Include="Classes\VacuumWarrior\InfinityCapsule4.cs" />
+    <Compile Include="Classes\VacuumWarrior\Instances.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkBuildup.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkCapacity.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkItems.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkSpawnRate.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkSpawnRateBoost.cs" />
+    <Compile Include="Classes\VacuumWarrior\JunkStatistics.cs" />
+    <Compile Include="Classes\VacuumWarrior\KeepVacuums.cs" />
+    <Compile Include="Classes\VacuumWarrior\Lantern.cs" />
+    <Compile Include="Classes\VacuumWarrior\Lawn.cs" />
+    <Compile Include="Classes\VacuumWarrior\Locations.cs" />
+    <Compile Include="Classes\VacuumWarrior\LocationShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\LumpSellMultiplier.cs" />
+    <Compile Include="Classes\VacuumWarrior\LumpSpawning.cs" />
+    <Compile Include="Classes\VacuumWarrior\LumpSpawnRateBoost.cs" />
+    <Compile Include="Classes\VacuumWarrior\Manager.cs" />
+    <Compile Include="Classes\VacuumWarrior\ManagerAllLocations.cs" />
+    <Compile Include="Classes\VacuumWarrior\ManagerShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\MarsDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\MaxedAvas.cs" />
+    <Compile Include="Classes\VacuumWarrior\MegaAVA.cs" />
+    <Compile Include="Classes\VacuumWarrior\MergeManagers.cs" />
+    <Compile Include="Classes\VacuumWarrior\Mine.cs" />
+    <Compile Include="Classes\VacuumWarrior\Money.cs" />
+    <Compile Include="Classes\VacuumWarrior\Moon.cs" />
+    <Compile Include="Classes\VacuumWarrior\MoonDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\MoonFlag.cs" />
+    <Compile Include="Classes\VacuumWarrior\MoonFootprint.cs" />
+    <Compile Include="Classes\VacuumWarrior\MovementSpeed.cs" />
+    <Compile Include="Classes\VacuumWarrior\Neighbour.cs" />
+    <Compile Include="Classes\VacuumWarrior\Objects.cs" />
+    <Compile Include="Classes\VacuumWarrior\OfflineChestsCommon.cs" />
+    <Compile Include="Classes\VacuumWarrior\OfflineChestsEfficiency.cs" />
+    <Compile Include="Classes\VacuumWarrior\OfflineChestsGolden.cs" />
+    <Compile Include="Classes\VacuumWarrior\OfflineJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\OfflineJunkEfficiency.cs" />
+    <Compile Include="Classes\VacuumWarrior\OfflineTime.cs" />
+    <Compile Include="Classes\VacuumWarrior\OmniJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\OpenCommonChests.cs" />
+    <Compile Include="Classes\VacuumWarrior\OpenedChests.cs" />
+    <Compile Include="Classes\VacuumWarrior\OpenGoldenChest.cs" />
+    <Compile Include="Classes\VacuumWarrior\OwnEnthusiast.cs" />
+    <Compile Include="Classes\VacuumWarrior\OwnExpert.cs" />
+    <Compile Include="Classes\VacuumWarrior\OwnManagers.cs" />
+    <Compile Include="Classes\VacuumWarrior\OwnTenAvas.cs" />
+    <Compile Include="Classes\VacuumWarrior\ParticleMultiplier.cs" />
+    <Compile Include="Classes\VacuumWarrior\ParticleSize.cs" />
+    <Compile Include="Classes\VacuumWarrior\ParticleSpawnRateBoost.cs" />
+    <Compile Include="Classes\VacuumWarrior\PieceOfMetal.cs" />
+    <Compile Include="Classes\VacuumWarrior\PileOfNails.cs" />
+    <Compile Include="Classes\VacuumWarrior\PlayerData.cs" />
+    <Compile Include="Classes\VacuumWarrior\PoppedBalloon.cs" />
+    <Compile Include="Classes\VacuumWarrior\PremiumShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\Prestige.cs" />
+    <Compile Include="Classes\VacuumWarrior\PrestigeCoinMultiplier.cs" />
+    <Compile Include="Classes\VacuumWarrior\Prestiges.cs" />
+    <Compile Include="Classes\VacuumWarrior\PrestigeShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\PrestigeStatistics.cs" />
+    <Compile Include="Classes\VacuumWarrior\Resources.cs" />
+    <Compile Include="Classes\VacuumWarrior\RideAnAVA.cs" />
+    <Compile Include="Classes\VacuumWarrior\Road.cs" />
+    <Compile Include="Classes\VacuumWarrior\RoadDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\RobotCharacter.cs" />
+    <Compile Include="Classes\VacuumWarrior\RocketDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\Root.cs" />
+    <Compile Include="Classes\VacuumWarrior\SandDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\Sawblade.cs" />
+    <Compile Include="Classes\VacuumWarrior\Sawdust.cs" />
+    <Compile Include="Classes\VacuumWarrior\Sawmill.cs" />
+    <Compile Include="Classes\VacuumWarrior\ShopAutomation.cs" />
+    <Compile Include="Classes\VacuumWarrior\ShopAutomationManager.cs" />
+    <Compile Include="Classes\VacuumWarrior\ShopAutomationShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\ShopBotEnabledStates.cs" />
+    <Compile Include="Classes\VacuumWarrior\ShopData.cs" />
+    <Compile Include="Classes\VacuumWarrior\ShopItems.cs" />
+    <Compile Include="Classes\VacuumWarrior\Shops.cs" />
+    <Compile Include="Classes\VacuumWarrior\SixStarManager.cs" />
+    <Compile Include="Classes\VacuumWarrior\Size.cs" />
+    <Compile Include="Classes\VacuumWarrior\Sock.cs" />
+    <Compile Include="Classes\VacuumWarrior\Spaceport.cs" />
+    <Compile Include="Classes\VacuumWarrior\SpawnRate.cs" />
+    <Compile Include="Classes\VacuumWarrior\Speed.cs" />
+    <Compile Include="Classes\VacuumWarrior\StarDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\StoredChests.cs" />
+    <Compile Include="Classes\VacuumWarrior\StoreJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\Suction.cs" />
+    <Compile Include="Classes\VacuumWarrior\SupporterShopOpen.cs" />
+    <Compile Include="Classes\VacuumWarrior\Time.cs" />
+    <Compile Include="Classes\VacuumWarrior\Timers.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockBoosts.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockFirstAVA.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockFirstLocation.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockFirstVacuum.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockManagers.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockNextDust.cs" />
+    <Compile Include="Classes\VacuumWarrior\UnlockOfflineJunk.cs" />
+    <Compile Include="Classes\VacuumWarrior\UseBoosts.cs" />
+    <Compile Include="Classes\VacuumWarrior\VacuumShop.cs" />
+    <Compile Include="Classes\VacuumWarrior\VacuumTokens.cs" />
+    <Compile Include="Forms\Base64DecodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Base64DecodeForm.Designer.cs">
+      <DependentUpon>Base64DecodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VacuumWarrior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VacuumWarrior.Designer.cs">
+      <DependentUpon>VacuumWarrior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestVacuumWarrior.cs" />
+    <EmbeddedResource Include="Forms\Base64DecodeForm.resx">
+      <DependentUpon>Base64DecodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VacuumWarrior.resx">
+      <DependentUpon>VacuumWarrior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
